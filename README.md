@@ -6,6 +6,3 @@ HKr Maven Repo
         <name>HKr Manve Repo</name>
         <url>https://raw.githubusercontent.com/hkrgo/hkr-repo/master/repository/</url>
     </repository>
-
-
-Copyright!
