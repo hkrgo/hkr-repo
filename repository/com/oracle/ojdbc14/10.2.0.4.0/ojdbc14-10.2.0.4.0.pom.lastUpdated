@@ -1,0 +1,19 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Tue Aug 18 09:22:54 CST 2015
+http\://10.10.92.244\:8081/nexus/content/groups/kora/.lastUpdated=1439860974942
+http\://download.java.net/maven/2/.lastUpdated=1432173747222
+http\://repository.jboss.org/nexus/content/groups/public/.lastUpdated=1432173758049
+http\://repo.maven.apache.org/maven2/.lastUpdated=1432616297858
+https\://maven.alfresco.com/nexus/content/groups/public/.error=Could not transfer artifact com.oracle\:ojdbc14\:pom\:10.2.0.4.0 from/to activiti-repos (https\://maven.alfresco.com/nexus/content/groups/public)\: Unexpected status line\: <HEAD><TITLE>Proxy Authorization Required</TITLE></HEAD>
+https\://raw.github.com/thinkgem/repository/master/.error=Could not transfer artifact com.oracle\:ojdbc14\:pom\:10.2.0.4.0 from/to thinkgem-repos2 (https\://raw.github.com/thinkgem/repository/master)\: Unexpected status line\: <HEAD><TITLE>Proxy Authorization Required</TITLE></HEAD>
+http\://download.java.net/maven/2/.error=
+http\://repo.spring.io/release/.error=
+282524206d7bc9d61405da8644ff5b7cfbc323df@proxy.neusoft.com\:8080>@default-https\://raw.github.com/thinkgem/repository/master/.lastUpdated=1432173757057
+http\://git.oschina.net/thinkgem/repos/raw/master/.lastUpdated=1432173756763
+282524206d7bc9d61405da8644ff5b7cfbc323df@proxy.neusoft.com\:8080>@default-https\://app.camunda.com/nexus/content/groups/public/.lastUpdated=1432173753581
+http\://repo.spring.io/release/.lastUpdated=1432173748681
+http\://repo1.maven.org/maven2/.lastUpdated=1432173752472
+282524206d7bc9d61405da8644ff5b7cfbc323df@proxy.neusoft.com\:8080>@default-https\://maven.alfresco.com/nexus/content/groups/public/.lastUpdated=1432173753411
+http\://git.oschina.net/thinkgem/repos/raw/master/.error=
+https\://app.camunda.com/nexus/content/groups/public/.error=Could not transfer artifact com.oracle\:ojdbc14\:pom\:10.2.0.4.0 from/to activiti-repos2 (https\://app.camunda.com/nexus/content/groups/public)\: Unexpected status line\: <HEAD><TITLE>Proxy Authorization Required</TITLE></HEAD>
+http\://repository.jboss.org/nexus/content/groups/public/.error=
