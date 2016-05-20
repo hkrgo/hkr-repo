@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.neusoft.kora.log</groupId>
+  <artifactId>tools.simple</artifactId>
+  <versioning>
+    <versions>
+      <version>1.0-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20151016102210</lastUpdated>
+  </versioning>
+</metadata>

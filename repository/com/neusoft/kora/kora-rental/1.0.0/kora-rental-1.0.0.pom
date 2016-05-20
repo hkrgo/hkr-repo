@@ -1,0 +1,610 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.neusoft.kora</groupId>
+    <artifactId>kora-rental</artifactId>
+    <name>kora-rental</name>
+    <version>1.0.0</version>
+    <packaging>pom</packaging>
+
+    <properties>
+        <!-- 文件拷贝时的编码 -->
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <!-- 编译时的编码 -->
+        <maven.checkstyle-plugin.version>2.16</maven.checkstyle-plugin.version>
+        <maven.clean-plugin.version>2.5</maven.clean-plugin.version>
+        <maven.compiler.encoding>UTF-8</maven.compiler.encoding>
+        <maven.compiler.source>1.7</maven.compiler.source>
+        <maven.compiler.target>1.7</maven.compiler.target>
+        <maven.compiler-plugin.version>2.3.2</maven.compiler-plugin.version>
+        <maven.jxr-plugin.version>2.3</maven.jxr-plugin.version>
+        <maven.resources-plugin.version>2.5</maven.resources-plugin.version>
+        <maven.surefire-plugin.version>2.7.2</maven.surefire-plugin.version>
+        <maven.war-plugin.version>2.6</maven.war-plugin.version>
+        <!-- abcdefghijklmnopqrstuvwxyz -->
+        <aspectjrt.version>1.5.4</aspectjrt.version>
+        <aspectjweaver.version>1.8.6</aspectjweaver.version>
+        <checkstyle.version>6.6</checkstyle.version>
+        <commons-codec.version>1.9</commons-codec.version>
+        <commons-configuration.version>1.6</commons-configuration.version>
+        <commons-httpclient.version>3.1</commons-httpclient.version>
+        <commons-lang3.version>3.3.2</commons-lang3.version>
+        <commons-logging.version>1.0.3</commons-logging.version>
+        <cglib-nodep.version>3.1</cglib-nodep.version>
+        <druid.version>1.0.11</druid.version>
+        <el-ri.version>1.0</el-ri.version>
+        <getui.version>4.0.0.2</getui.version>
+        <guava.version>17.0</guava.version>
+        <hibernate-validator.version>5.1.1.Final</hibernate-validator.version>
+        <jackson-all.version>1.8.5</jackson-all.version>
+        <jackson-core.version>2.3.0</jackson-core.version>
+        <jackson-databind.version>2.4.0</jackson-databind.version>
+        <jackson-module-jaxb-annotations.version>${jackson-databind.version}</jackson-module-jaxb-annotations.version>
+        <javax.el-api.version>2.2.4</javax.el-api.version>
+        <javax.servlet-api.version>3.1.0</javax.servlet-api.version>
+        <jedis.version>2.6.2</jedis.version>
+        <json-lib.version>2.4</json-lib.version>
+        <jsp-api.version>2.1</jsp-api.version>
+        <jstl.version>1.2</jstl.version>
+        <junit.version>4.12</junit.version>
+
+        <kora.rental-app.version>1.0.0</kora.rental-app.version>
+        <kora.rental-core.version>1.0.0</kora.rental-core.version>
+        <kora.rental-payment.version>1.0.0</kora.rental-payment.version>
+        <rental-common-util.version>1.0.0</rental-common-util.version>
+
+        <kora.kora-log.version>1.0.1</kora.kora-log.version>
+        <kora.kora-redis.version>1.1.0</kora.kora-redis.version>
+        <kora.kora-push.version>1.0.4</kora.kora-push.version>
+        <kora.kora-sms.version>1.1.1</kora.kora-sms.version>
+        <kora.kora-http.version>1.0.1</kora.kora-http.version>
+        <kora.kora-itools.version>1.0.4</kora.kora-itools.version>
+
+        <com.google.code.gson.version>2.2.2</com.google.code.gson.version>
+        <net.dongliu.requests.version>1.9.2</net.dongliu.requests.version>
+        <mybatis.version>3.2.8</mybatis.version>
+        <mybatis-spring.version>1.2.2</mybatis-spring.version>
+        <mysql.driver.version>5.1.30</mysql.driver.version>
+        <protobuf-java.version>2.5.0</protobuf-java.version>
+        <servlet-api.version>2.5</servlet-api.version>
+        <shiro.version>1.2.3</shiro.version>
+        <slf4j.version>1.7.7</slf4j.version>
+        <spring.version>4.1.6.RELEASE</spring.version>
+        <spring-data-redis.version>1.5.0.RELEASE</spring-data-redis.version>
+        <dom4j.version>1.6.1</dom4j.version>
+    </properties>
+
+    <!-- 子模块 -->
+    <modules>
+        <!-- 租赁手机服务 -->
+        <module>rental-app</module>
+        <!-- 租赁核心业务 -->
+        <module>rental-core</module>
+        <!-- 租赁公共类 -->
+        <module>rental-common-util</module>
+        <!-- 租赁电桩交互 -->
+        <module>rental-electric-pile</module>
+        <!-- 租赁管理网站 -->
+        <module>rental-web</module>
+        <!-- 调度服务器 -->
+        <!--<module>rental-task</module>-->
+        <!-- redis 事件监听模块-->
+        <module>rental-redis-pubsub</module>
+        <!-- 支付模块-->
+        <module>rental-payment</module>
+    </modules>
+
+    <!-- 仓储地址 -->
+    <repositories>
+        <repository>
+            <id>kora</id>
+            <name>Oschina Releases</name>
+            <url>http://10.10.142.191:8081/nexus/content/groups/kora/</url>
+        </repository>
+    </repositories>
+
+    <distributionManagement>
+        <repository>
+            <id>releases</id>
+            <!--这个ID需要与你的release仓库的Repository ID一致 -->
+            <url>http://10.10.142.191:8081/nexus/content/repositories/releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <!--这个ID需要与你的snapshots仓库的Repository ID一致 -->
+            <url>http://10.10.142.191:8081/nexus/content/repositories/snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>${junit.version}</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>javax.servlet</groupId>
+                <artifactId>servlet-api</artifactId>
+                <version>${servlet-api.version}</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>javax.servlet.jsp</groupId>
+                <artifactId>jsp-api</artifactId>
+                <version>${jsp-api.version}</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-websocket</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-messaging</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-core</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-web</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-webmvc</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-context-support</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-aop</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-oxm</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-tx</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-jdbc</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-beans</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+            <!-- GENERAL UTILS begin -->
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>${commons-lang3.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>${guava.version}</version>
+            </dependency>
+            <!-- GENERAL UTILS end -->
+            <!-- SECURITY begin -->
+            <dependency>
+                <groupId>org.apache.shiro</groupId>
+                <artifactId>shiro-spring</artifactId>
+                <version>${shiro.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.shiro</groupId>
+                <artifactId>shiro-ehcache</artifactId>
+                <version>${shiro.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-codec</groupId>
+                <artifactId>commons-codec</artifactId>
+                <version>${commons-codec.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-logging</groupId>
+                <artifactId>commons-logging</artifactId>
+                <version>${commons-logging.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-configuration</groupId>
+                <artifactId>commons-configuration</artifactId>
+                <version>${commons-configuration.version}</version>
+            </dependency>
+            <!-- SECURITY end -->
+            <!-- JSON begin -->
+            <dependency>
+                <groupId>jackson-all</groupId>
+                <artifactId>jackson-all</artifactId>
+                <version>${jackson-all.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-core</artifactId>
+                <version>${jackson-core.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-databind</artifactId>
+                <version>${jackson-databind.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.module</groupId>
+                <artifactId>jackson-module-jaxb-annotations</artifactId>
+                <version>${jackson-module-jaxb-annotations.version}</version>
+            </dependency>
+            <!-- JSON end -->
+            <!--GSON -->
+            <dependency>
+                <groupId>com.google.code.gson</groupId>
+                <artifactId>gson</artifactId>
+                <version>${com.google.code.gson.version}</version>
+            </dependency>
+            <!--GSON end -->
+            <dependency>
+                <groupId>javax.servlet</groupId>
+                <artifactId>jstl</artifactId>
+                <version>${jstl.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>javax.servlet</groupId>
+                <artifactId>javax.servlet-api</artifactId>
+                <version>${javax.servlet-api.version}</version>
+                <scope>provided</scope>
+            </dependency>
+            <!-- MyBatis -->
+            <dependency>
+                <groupId>org.mybatis</groupId>
+                <artifactId>mybatis</artifactId>
+                <version>${mybatis.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.mybatis</groupId>
+                <artifactId>mybatis-spring</artifactId>
+                <version>${mybatis-spring.version}</version>
+            </dependency>
+            <!-- connection pool -->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid</artifactId>
+                <version>${druid.version}</version>
+            </dependency>
+            <!-- jdbc driver -->
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql.driver.version}</version>
+                <scope>runtime</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+                <version>${slf4j.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-log4j12</artifactId>
+                <version>${slf4j.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>jcl-over-slf4j</artifactId>
+                <version>${slf4j.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>jul-to-slf4j</artifactId>
+                <version>${slf4j.version}</version>
+            </dependency>
+            <!-- LOGGING end -->
+            <!-- web service add start -->
+            <dependency>
+                <groupId>org.aspectj</groupId>
+                <artifactId>aspectjrt</artifactId>
+                <version>${aspectjrt.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.aspectj</groupId>
+                <artifactId>aspectjweaver</artifactId>
+                <version>${aspectjweaver.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>cglib</groupId>
+                <artifactId>cglib-nodep</artifactId>
+                <version>${cglib-nodep.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>net.sf.json-lib</groupId>
+                <artifactId>json-lib</artifactId>
+                <version>${json-lib.version}</version>
+                <classifier>jdk15</classifier>
+            </dependency>
+            <dependency>
+                <groupId>commons-httpclient</groupId>
+                <artifactId>commons-httpclient</artifactId>
+                <version>${commons-httpclient.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-test</artifactId>
+                <version>${spring.version}</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>redis.clients</groupId>
+                <artifactId>jedis</artifactId>
+                <version>${jedis.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.data</groupId>
+                <artifactId>spring-data-redis</artifactId>
+                <version>${spring-data-redis.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.neusoft.kora</groupId>
+                <artifactId>rental-core</artifactId>
+                <version>${kora.rental-core.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.neusoft.kora</groupId>
+                <artifactId>rental-payment</artifactId>
+                <version>${kora.rental-payment.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.neusoft.kora.platform</groupId>
+                <artifactId>kora-log</artifactId>
+                <version>${kora.kora-log.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.neusoft.kora.platform</groupId>
+                <artifactId>kora-redis</artifactId>
+                <version>${kora.kora-redis.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.neusoft.kora.platform</groupId>
+                <artifactId>kora-push</artifactId>
+                <version>${kora.kora-push.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.neusoft.kora.platform</groupId>
+                <artifactId>kora-itools</artifactId>
+                <version>${kora.kora-itools.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.neusoft.kora</groupId>
+                <artifactId>rental-common-util</artifactId>
+                <version>${rental-common-util.version}</version>
+            </dependency>
+
+
+            <!-- 个推 start -->
+            <dependency>
+                <groupId>com.getui</groupId>
+                <artifactId>gexin-rp-sdk-template</artifactId>
+                <version>${getui.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.getui</groupId>
+                <artifactId>gexin-rp-sdk-http</artifactId>
+                <version>${getui.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.gexin.platform</groupId>
+                <artifactId>gexin-rp-sdk-base</artifactId>
+                <version>${getui.version}</version>
+            </dependency>
+            <!-- 个推 end -->
+
+            <!-- validator start -->
+            <dependency>
+                <groupId>org.hibernate</groupId>
+                <artifactId>hibernate-validator</artifactId>
+                <version>${hibernate-validator.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>javax.el</groupId>
+                <artifactId>javax.el-api</artifactId>
+                <version>${javax.el-api.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.sun.el</groupId>
+                <artifactId>el-ri</artifactId>
+                <version>${el-ri.version}</version>
+            </dependency>
+            <!-- validator end -->
+
+            <dependency>
+                <groupId>com.google.protobuf</groupId>
+                <artifactId>protobuf-java</artifactId>
+                <version>${protobuf-java.version}</version>
+            </dependency>
+
+            <!-- 短信接口-->
+            <dependency>
+                <groupId>net.dongliu</groupId>
+                <artifactId>requests</artifactId>
+                <version>${net.dongliu.requests.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.neusoft.kora.platform</groupId>
+                <artifactId>kora-sms</artifactId>
+                <version>${kora.kora-sms.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.neusoft.kora.platform</groupId>
+                <artifactId>kora-http</artifactId>
+                <version>${kora.kora-http.version}</version>
+            </dependency>
+
+            <!-- END短信接口-->
+
+            <dependency>
+                <groupId>dom4j</groupId>
+                <artifactId>dom4j</artifactId>
+                <version>${dom4j.version}</version>
+            </dependency>
+
+
+        </dependencies>
+    </dependencyManagement>
+
+    <profiles>
+        <profile>
+            <id>local</id>
+            <properties>
+                <package.environment>local</package.environment>
+            </properties>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+        </profile>
+        <profile>
+            <id>micro</id>
+            <properties>
+                <package.environment>micro</package.environment>
+            </properties>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+        </profile>
+        <profile>
+            <id>micro_4</id>
+            <properties>
+                <package.environment>micro_4</package.environment>
+            </properties>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+        </profile>
+
+        <profile>
+            <id>ali_90</id>
+            <properties>
+                <package.environment>ali_90</package.environment>
+            </properties>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+        </profile>
+
+        <profile>
+            <id>ali_beta</id>
+            <properties>
+                <package.environment>ali_beta</package.environment>
+            </properties>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+        </profile>
+
+    </profiles>
+
+
+    <build>
+        <resources>
+            <resource>
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.xml</include>
+                </includes>
+                <filtering>false</filtering>
+            </resource>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
+        <plugins>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${maven.compiler-plugin.version}</version>
+                <configuration>
+                    <source>${maven.compiler.source}</source>
+                    <target>${maven.compiler.target}</target>
+                    <encoding>${maven.compiler.encoding}</encoding>
+                </configuration>
+            </plugin>
+            <plugin>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <configuration>
+                    <skip>true</skip>
+                </configuration>
+                <version>${maven.surefire-plugin.version}</version>
+            </plugin>
+            <plugin>
+                <artifactId>maven-clean-plugin</artifactId>
+                <version>${maven.clean-plugin.version}</version>
+            </plugin>
+            <plugin>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>${maven.resources-plugin.version}</version>
+            </plugin>
+            <plugin>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>${maven.war-plugin.version}</version>
+                <configuration>
+                    <archive>
+                        <addMavenDescriptor>false</addMavenDescriptor>
+                    </archive>
+                    <warName>rental-app</warName>
+                    <webResources>
+                        <resource>
+                            <directory>src/${package.environment}/resources/</directory>
+                            <targetPath>WEB-INF/classes</targetPath>
+                            <filtering>true</filtering>
+                        </resource>
+                        <resource>
+                            <directory>src/main/resources</directory>
+                            <targetPath>WEB-INF/classes</targetPath>
+                            <filtering>true</filtering>
+                        </resource>
+                    </webResources>
+                </configuration>
+            </plugin>
+            <plugin>
+                <artifactId>maven-checkstyle-plugin</artifactId>
+                <version>${maven.checkstyle-plugin.version}</version>
+                <configuration>
+                    <configLocation>KoraCheckStyle.xml</configLocation>
+                </configuration>
+                <!--<dependencies>
+                    <dependency>
+                        <groupId>com.puppycrawl.tools</groupId>
+                        <artifactId>checkstyle</artifactId>
+                        <version>${checkstyle.version}</version>
+                    </dependency>
+                </dependencies>-->
+            </plugin>
+        </plugins>
+    </build>
+
+    <!--<reporting>
+        <plugins>
+            <plugin>
+                <artifactId>maven-jxr-plugin</artifactId>
+                <version>${maven.jxr-plugin.version}</version>
+            </plugin>
+        </plugins>
+    </reporting>-->
+</project>

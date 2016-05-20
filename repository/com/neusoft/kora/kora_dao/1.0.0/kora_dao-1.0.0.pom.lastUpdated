@@ -1,0 +1,4 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Fri Jul 31 13:21:18 CST 2015
+282524206d7bc9d61405da8644ff5b7cfbc323df@proxy.neusoft.com\:8080>@default-http\://maven.oschina.net/content/groups/public/.lastUpdated=1438320078214
+http\://maven.oschina.net/content/groups/public/.error=Could not transfer artifact com.neusoft.kora\:kora_dao\:pom\:1.0.0 from/to maven-net-cn (http\://maven.oschina.net/content/groups/public/)\: Connection reset
