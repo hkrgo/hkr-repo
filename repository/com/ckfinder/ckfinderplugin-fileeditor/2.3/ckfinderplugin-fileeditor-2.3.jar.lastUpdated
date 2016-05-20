@@ -1,0 +1,24 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Wed Aug 26 17:26:35 CST 2015
+http\://repo1.maven.org/maven2/.lastUpdated=1432617372244
+282524206d7bc9d61405da8644ff5b7cfbc323df@proxy.neusoft.com\:8080>@default-https\://raw.github.com/thinkgem/repository/master/.lastUpdated=1432617382348
+http\://git.oschina.net/thinkgem/repos/raw/master/.lastUpdated=1432617381914
+http\://10.10.92.153\:8081/nexus/content/groups/kora/.lastUpdated=1440581195422
+http\://10.10.92.244\:8081/nexus/content/groups/kora/.error=Could not transfer artifact com.ckfinder\:ckfinderplugin-fileeditor\:jar\:2.3 from/to kora (http\://10.10.92.244\:8081/nexus/content/groups/kora/)\: The operation was cancelled.
+282524206d7bc9d61405da8644ff5b7cfbc323df@proxy.neusoft.com\:8080>@default-https\://app.camunda.com/nexus/content/groups/public/.lastUpdated=1432617372337
+http\://mirrors.ibiblio.org/pub/mirrors/maven2/.lastUpdated=1432608995840
+http\://maven.oschina.net/content/groups/public/.lastUpdated=1432617343974
+http\://repo.maven.apache.org/maven2/.lastUpdated=1432617366629
+http\://repo.spring.io/release/.lastUpdated=1432617359008
+http\://download.java.net/maven/2/.lastUpdated=1432617353357
+http\://repo.maven.apache.org/maven2/.error=
+http\://download.java.net/maven/2/.error=
+http\://maven.oschina.net/content/groups/public/.error=
+https\://raw.github.com/thinkgem/repository/master/.error=Could not transfer artifact com.ckfinder\:ckfinderplugin-fileeditor\:jar\:2.3 from/to thinkgem-repos2 (https\://raw.github.com/thinkgem/repository/master)\: Unexpected status line\: <HEAD><TITLE>Proxy Authorization Required</TITLE></HEAD>
+http\://mirrors.ibiblio.org/pub/mirrors/maven2/.error=
+https\://maven.alfresco.com/nexus/content/groups/public/.error=Could not transfer artifact com.ckfinder\:ckfinderplugin-fileeditor\:jar\:2.3 from/to activiti-repos (https\://maven.alfresco.com/nexus/content/groups/public)\: Unexpected status line\: <HEAD><TITLE>Proxy Authorization Required</TITLE></HEAD>
+http\://repo.spring.io/release/.error=
+https\://app.camunda.com/nexus/content/groups/public/.error=Could not transfer artifact com.ckfinder\:ckfinderplugin-fileeditor\:jar\:2.3 from/to activiti-repos2 (https\://app.camunda.com/nexus/content/groups/public)\: Unexpected status line\: <HEAD><TITLE>Proxy Authorization Required</TITLE></HEAD>
+282524206d7bc9d61405da8644ff5b7cfbc323df@proxy.neusoft.com\:8080>@default-https\://maven.alfresco.com/nexus/content/groups/public/.lastUpdated=1432617372299
+http\://repo1.maven.org/maven2/.error=
+@default-http\://10.10.92.244\:8081/nexus/content/groups/kora/.lastUpdated=1439862133915
