@@ -1,0 +1,24 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Wed Aug 26 17:24:51 CST 2015
+http\://repo1.maven.org/maven2/.lastUpdated=1432617171477
+282524206d7bc9d61405da8644ff5b7cfbc323df@proxy.neusoft.com\:8080>@default-https\://raw.github.com/thinkgem/repository/master/.lastUpdated=1432617172139
+http\://git.oschina.net/thinkgem/repos/raw/master/.lastUpdated=1432617171944
+http\://10.10.92.244\:8081/nexus/content/groups/kora/.lastUpdated=1439861130525
+http\://10.10.92.153\:8081/nexus/content/groups/kora/.lastUpdated=1440581091713
+http\://10.10.92.244\:8081/nexus/content/groups/kora/.error=
+282524206d7bc9d61405da8644ff5b7cfbc323df@proxy.neusoft.com\:8080>@default-https\://app.camunda.com/nexus/content/groups/public/.lastUpdated=1432617171518
+http\://mirrors.ibiblio.org/pub/mirrors/maven2/.lastUpdated=1432608980481
+http\://maven.oschina.net/content/groups/public/.lastUpdated=1432617168357
+http\://repo.maven.apache.org/maven2/.lastUpdated=1432617170913
+http\://repo.spring.io/release/.lastUpdated=1432617170162
+http\://download.java.net/maven/2/.lastUpdated=1432617169026
+http\://repo.maven.apache.org/maven2/.error=
+http\://download.java.net/maven/2/.error=
+http\://maven.oschina.net/content/groups/public/.error=
+https\://raw.github.com/thinkgem/repository/master/.error=Could not transfer artifact org.wltea\:analyzer\:pom\:2012_u6 from/to thinkgem-repos2 (https\://raw.github.com/thinkgem/repository/master)\: Unexpected status line\: <HEAD><TITLE>Proxy Authorization Required</TITLE></HEAD>
+http\://mirrors.ibiblio.org/pub/mirrors/maven2/.error=
+https\://maven.alfresco.com/nexus/content/groups/public/.error=Could not transfer artifact org.wltea\:analyzer\:pom\:2012_u6 from/to activiti-repos (https\://maven.alfresco.com/nexus/content/groups/public)\: Unexpected status line\: <HEAD><TITLE>Proxy Authorization Required</TITLE></HEAD>
+http\://repo.spring.io/release/.error=
+https\://app.camunda.com/nexus/content/groups/public/.error=Could not transfer artifact org.wltea\:analyzer\:pom\:2012_u6 from/to activiti-repos2 (https\://app.camunda.com/nexus/content/groups/public)\: Unexpected status line\: <HEAD><TITLE>Proxy Authorization Required</TITLE></HEAD>
+282524206d7bc9d61405da8644ff5b7cfbc323df@proxy.neusoft.com\:8080>@default-https\://maven.alfresco.com/nexus/content/groups/public/.lastUpdated=1432617171502
+http\://repo1.maven.org/maven2/.error=
