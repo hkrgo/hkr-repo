@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.reachauto.hkr.mod.intest</groupId>
+    <artifactId>hkr-mod-intest-socket-server</artifactId>
+    <packaging>pom</packaging>
+    <version>1.3.1</version>
+
+
+
+    <modules>
+        <module>socket-server</module>
+        <module>intest-parser</module>
+        <module>test-server-copy</module>
+    </modules>
+
+    <properties>
+        <netty-version>5.0.0.Alpha1</netty-version>
+        <dom4j-version>1.6.1</dom4j-version>
+        <org.slf4j-version>1.7.6</org.slf4j-version>
+        <hkr-util-common.version>0.0.1</hkr-util-common.version>
+        <mysql-connector.version>5.1.35</mysql-connector.version>
+        <hkr-bigdata-intest.version>1.0.1</hkr-bigdata-intest.version>
+    </properties>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>1.3.0.RELEASE</version>
+    </parent>
+
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>io.netty</groupId>
+                <artifactId>netty-all</artifactId>
+                <version>${netty-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>dom4j</groupId>
+                <artifactId>dom4j</artifactId>
+                <version>${dom4j-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-log4j12</artifactId>
+                <version>${org.slf4j-version}</version>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
+
+</project>
