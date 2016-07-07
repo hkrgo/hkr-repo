@@ -7,5 +7,5 @@ HKr Maven Repo
         <name>HKr Maven Repo</name>
         <url>https://raw.githubusercontent.com/hkrgo/hkr-repo/master/repository/</url>
     </repository>
-111
+
 ```
