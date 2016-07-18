@@ -4,7 +4,7 @@
     <parent>
         <groupId>com.neusoft.kora</groupId>
         <artifactId>kora-rental</artifactId>
-        <version>2.0.0</version>
+        <version>1.0.0</version>
     </parent>
     <artifactId>rental-core</artifactId>
     <name>rental-core</name>
