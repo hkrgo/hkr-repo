@@ -30,7 +30,7 @@
         <druid.version>1.0.14</druid.version>
         <swagger.version>2.4.0</swagger.version>
 
-        <hkr.util.version>0.1.7</hkr.util.version>
+        <hkr.util.version>0.1.9</hkr.util.version>
         <hkr.platform.version>0.2.2</hkr.platform.version>
 
     </properties>
