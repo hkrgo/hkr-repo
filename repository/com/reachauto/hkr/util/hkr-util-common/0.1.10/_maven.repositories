@@ -1,4 +1,6 @@
 #NOTE: This is an internal implementation file, its format can be changed without prior notice.
-#Wed Aug 31 15:57:21 CST 2016
+#Fri Sep 02 14:20:14 CST 2016
 hkr-util-common-0.1.10.jar>=
+hkr-util-common-0.1.10.jar>hkr-repo=
+hkr-util-common-0.1.10.pom>hkr-repo=
 hkr-util-common-0.1.10.pom>=
