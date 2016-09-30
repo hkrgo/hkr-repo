@@ -3,7 +3,7 @@
   <groupId>com.reachauto.hkr</groupId>
   <artifactId>hkr-mod-parent</artifactId>
   <versioning>
-    <release>1.11.1</release>
+    <release>1.11.2</release>
     <versions>
       <version>1.6.0</version>
       <version>1.6.1</version>
@@ -14,7 +14,8 @@
       <version>1.10.0</version>
       <version>1.11.0</version>
       <version>1.11.1</version>
+      <version>1.11.2</version>
     </versions>
-    <lastUpdated>20160928090635</lastUpdated>
+    <lastUpdated>20160930020531</lastUpdated>
   </versioning>
 </metadata>
