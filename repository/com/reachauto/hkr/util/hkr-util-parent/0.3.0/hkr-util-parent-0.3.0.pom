@@ -15,6 +15,7 @@
         <module>hkr-util-exception</module>
         <module>hkr-util-alidayu</module>
         <module>hkr-util-umeng</module>
+        <module>hkr-util-auth</module>
     </modules>
 
     <properties>

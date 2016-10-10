@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metadata>
   <groupId>com.reachauto.hkr.util</groupId>
-  <artifactId>hkr-util-umeng</artifactId>
+  <artifactId>hkr-util-auth</artifactId>
   <versioning>
     <release>0.3.0</release>
     <versions>
