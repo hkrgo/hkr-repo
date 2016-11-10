@@ -17,7 +17,7 @@
     <properties>
         <hkr.platform.version>0.2.2</hkr.platform.version>
 
-        <hkr.util.version>0.4.1</hkr.util.version>
+        <hkr.util.version>0.4.2</hkr.util.version>
         <commons-lang.version>2.6</commons-lang.version>
         <commons-lang3.version>3.3.2</commons-lang3.version>
         <druid.version>1.0.14</druid.version>
