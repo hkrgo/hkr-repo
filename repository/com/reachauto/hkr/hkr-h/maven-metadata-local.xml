@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.reachauto.hkr</groupId>
+  <artifactId>hkr-h</artifactId>
+  <versioning>
+    <release>cloud-sr3</release>
+    <versions>
+      <version>cloud-sr3</version>
+    </versions>
+    <lastUpdated>20170106025438</lastUpdated>
+  </versioning>
+</metadata>
