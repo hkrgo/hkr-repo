@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>hkr-util-parent</artifactId>
+        <groupId>com.reachauto.hkr.util</groupId>
+        <version>v.5</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <version>0.5.3</version>
+
+    <artifactId>hkr-util-exception</artifactId>
+    <packaging>jar</packaging>
+
+    <properties>
+        <spring-boot.version>1.4.1.RELEASE</spring-boot.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <version>${spring-boot.version}</version>
+        </dependency>
+    </dependencies>
+
+</project>
